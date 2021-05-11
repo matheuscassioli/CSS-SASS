@@ -34,9 +34,9 @@ body{
     border-color :blue;
     color: blue;
     box-shadow: 0 0 0 15px rgba(255,255,255,0.7);
-    animation: pulsar 1s;
+    animation: pulsar 1s; /* chama o algoritmo pulsar*/
 }
-@keyframes pulsar {
+@keyframes pulsar {       /* cria um algoritmo chamado pulsar*/
     0%{
         box-shadow: 0 0 0 0 orange;
     }
