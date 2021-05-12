@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    height: 200vh;
+
+}
+#posicao{
+    position: sticky;
+    width: 100%;
+    height: 400px;
+    left: 0px;
+    top: 0px;
+    background-color: white;
+    display: flex;
+    flex-direction: row-reverse;
+
+ 
+
+}
+#posicao:hover .pulse{
+    bottom: 0;
+}
+.pulse { 
+    background-color: rgb(255, 72, 0);
+    color:rgb(250, 249, 249);
+    border: 2px solid white;
+    padding: 15px 40px;
+    margin: 0px;
+    transition: 0.5s;
+
+}
+.pulse:hover , .pulse:focus{
+    border-color :blue;
+    color: blue;
+    box-shadow: 0 0 0 15px rgba(255,255,255,0.7);
+    animation: pulsar 1s; /* chama o algoritmo pulsar*/
+}
+@keyframes pulsar {       /* cria um algoritmo chamado pulsar*/
+    0%{
+        box-shadow: 0 0 0 0 orange;
+    }
+    
+}
