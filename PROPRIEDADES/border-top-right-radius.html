@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>PROPRIEDADES BORDER-TOP-RIGHT-RADIUS </title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: red;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .direito {
+            width: 50%;
+            height: 50%;
+            background-color: royalblue;
+            border-color: white;
+            border-width: 10px;
+            border-style: dotted;
+            border-top-right-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .direito>div {
+            width: 50%;
+            height: 50%;
+            background-color: lawngreen;
+            border-style: inherit;
+            border-top-right-radius: inherit;
+            border-width: inherit;
+            border-color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="direito">
+        <div></div>
+    </div>
+</body>
+
+</html>
