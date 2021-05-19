@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>PROPRIEDADES OVERFLOW-Y </title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 300px;
+            height: 200px;
+            flex-direction: column;
+            border: black solid 5px;
+            overflow-y: scroll;
+        }
+
+        .item {
+            padding: 50px;
+            margin-right: 20px;
+            border: rgb(132, 0, 255) 10px outset;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">Curso Completo HTML5</div>
+        <div class="item">Curso Completo CSS3</div>
+        <div class="item">Curso Completo JS</div>
+        <div class="item">Curso Completo GIT e GitHub</div>
+        <div class="item">Curso Completo C#</div>
+    </div>
+</body>
+
+</html>

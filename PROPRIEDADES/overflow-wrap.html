@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>PROPRIEDADES OVERFLOW-WRAP </title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: min-content;
+            border: black solid 5px;
+
+            overflow-wrap: break-word;
+            /*CONTAINER QUEBRA A PALAVRA*/
+            /*overflow-wrap: normal;  QUEBRA O CONTAINER*/
+            /* overflow-wrap: anywhere;  QUEBRA NO MENOR VALOR POSSIVEL*/
+            max-width: 150px;
+        }
+
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia rem magni autem nisi recusandae, aliquam
+        consectetur eos nostrum at a ad ut id facilis odio tempora laboriosam <span>necessitatibusnecessitatibus</span>!
+        Accusantium, beatae.
+</body>
+
+</html>
