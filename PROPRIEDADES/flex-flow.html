@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>PROPRIEDADES FLEX-FLOW </title>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            margin-left: 150px;
+            display: flex;
+            width: 50vw;
+            height: 90vh;
+            box-shadow: 0 0 10px rgba(100, 100, 100, .2);
+            /*  flex-direction: row;
+            flex-wrap:wrap; */
+            flex-flow: row wrap;
+            /* ^abreviação de flex-wrap e flex-direction*/
+
+
+        }
+
+        .container>div {
+            margin-left: 2px;
+            margin-top: 2px;
+            width: 100px;
+            height: 100px;
+            border: solid 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container>div:hover {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="a">A</div>
+        <div class="b">B</div>
+        <div class="c">C</div>
+        <div class="d">D</div>
+        <div class="a">E</div>
+        <div class="b">F</div>
+        <div class="c">G</div>
+        <div class="d">H</div>
+        <div class="a">I</div>
+        <div class="b">J</div>
+        <div class="c">K</div>
+        <div class="d">L</div>
+
+    </div>
+</body>
+
+</html>
