@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>PROPRIEDADES DISPLAY </title>
+    <style type="text/css">
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .container {
+            margin-top: 30px;
+            max-width: 100vw;
+            max-height: 100vh;
+        }
+
+        h2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: orange;
+        }
+
+        .block {
+            display: block;
+
+        }
+
+        .inline {
+            display: inline;
+            width: 60px;
+
+        }
+
+        .inline-block {
+            display: inline-block;
+            background-color: red;
+            width: 60px;
+
+        }
+
+        .contents {
+            display: contents;
+            background-color: red;
+        }
+
+        .flex {
+            display: flex;
+
+        }
+
+        .inline-flex {
+            display: inline-flex;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 70px);
+        }
+
+        .inline-grid {
+            display: inline-grid;
+            grid-template-columns: repeat(4, 70px);
+        }
+
+        .list-item {
+            display: list-item;
+        }
+
+        .table {
+            display: table;
+        }
+
+        .linha {
+            display: table-row;
+        }
+
+        .celula {
+            display: table-cell;
+        }
+
+        .cabecalho {
+            display: table-header-group;
+        }
+
+        .cabecalho .celula {
+            font-weight: bold;
+            text-align: center;
+        }
+        .none{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Display: Block</h2>
+        <div class="block">Matheus</div>
+        <span class="block">Matheus</span>
+        <span class="block">Matheus</span>
+    </div>
+
+    <div class="container">
+        <h2>Display: Inline</h2>
+        <div class="inline">Matheus</div>
+        <span class="inline">Matheus</span>
+        <span class="inline">Matheus</span>
+    </div>
+    <div class="container">
+        <h2>Display:Inline-Block</h2>
+        <div class="inline-block">Matheus</div>
+        <span class="inline-block">Matheus</span>
+        <span class="inline-block">Matheus</span>
+    </div>
+    <div class="container">
+        <h2>Display: Contents</h2>
+        <div class="contents">Matheus</div>
+        <span class="contents">Matheus</span>
+        <span class="contents">Matheus</span>
+    </div>
+    <div class="container">
+        <h2>Display: flex</h2>
+        <div class="flex">A</div>
+        <span class="flex">B</span>
+        <span class="flex">C</span>
+    </div>
+    <div class="container">
+        <h2>Display: inline-flex</h2>
+        <div class="inline-flex">A</div>
+        <span class="inline-flex">B</span>
+        <span class="inline-flex">C</span>
+    </div>
+    <div class="container">
+        <h2>Display: grid</h2>
+        <div class="grid">
+            <div>AC</div>
+            <div>Ce</div>
+            <div>%</div>
+            <div>/</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>x</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>-</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>0</div>
+            <div>+</div>
+            <div>.</div>
+            <div>,</div>
+            <div>=</div>
+
+        </div>
+    </div>
+    <div class="container">
+        <h2>Display: inline-grid</h2>
+        <div class="inline-grid">
+            <div>AC</div>
+            <div>Ce</div>
+            <div>%</div>
+            <div>/</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>x</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>-</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>0</div>
+            <div>+</div>
+            <div>.</div>
+            <div>,</div>
+            <div>=</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Display: list-item</h2>
+        <div class="list-item">Matheus</div>
+        <span class="list-item">Matheus</span>
+        <span class="list-item">Matheus</span>
+    </div>
+    <div class="container">
+        <h2>Display: table</h2>
+        <div class="table">
+            <div class="cabecalho">
+                <div class="linha">
+                    <div class="celula">Nome</div>
+                    <div class="celula">Idade</div>
+                    <div class="celula">E-mail</div>
+                </div>
+            </div>
+            <div class="linha">
+                <div class="celula">Matheus</div>
+                <div class="celula">22</div>
+                <div class="celula">matheuscassioli@hotmail.com</div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Display: none</h2>
+        <div class="none">Matheus</div>
+        <span class="none">Matheus</span>
+        <span class="none">Matheus</span>
+    </div>
+</body>
+
+</html>
