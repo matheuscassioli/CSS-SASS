@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>PROPRIEDADES ALIGN-ITEMS </title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            align-items: baseline;
+            justify-content: center;
+        }
+
+        .container>div {
+            width: 100px;
+            background-color: violet;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div style="font-size: 150px;">A</div>
+        <div style="font-size: 100px;">B</div>
+        <div style="font-size: 80px;">C</div>
+        <div style="font-size: 60px;">D</div>
+        <div style="font-size: 10px;">E</div>
+    </div>
+</body>
+
+</html>
